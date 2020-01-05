@@ -17,7 +17,7 @@ ms.locfileid: "74534309"
 ---
 # <a name="build-highly-available-azure-storage-applications-with-geo-zone-redundant-storage-gzrs-preview"></a>使用地理区域冗余存储（GZRS）构建高度可用的 Azure 存储应用程序（预览版）
 
-区域冗余存储（GZRS）（预览版）结婚时会[区域冗余存储（ZRS）](storage-redundancy-zrs.md)的高可用性，通过[异地冗余存储（GRS）](storage-redundancy-grs.md)提供的区域中断保护。 将 GZRS 存储帐户中的数据复制到主要区域中的三个[Azure 可用性区域](../../availability-zones/az-overview.md)，并将其复制到辅助地理区域，以防止区域灾难。 每个 Azure 区域与同一地理位置中另一个区域配对。 有关更多详细信息和异常，请参阅[文档](https://docs.microsoft.com/azure/best-practices-availability-paired-regions)。
+区域冗余存储（GZRS）（预览版）结合了[区域冗余存储（ZRS）](storage-redundancy-zrs.md)的高可用性与[异地冗余存储（GRS）](storage-redundancy-grs.md)提供的区域中断保护。 将 GZRS 存储帐户中的数据复制到主要区域中的三个[Azure 可用性区域](../../availability-zones/az-overview.md)，并将其复制到辅助地理区域，以防止区域灾难。 每个 Azure 区域与同一地理位置中另一个区域配对。 有关更多详细信息和异常，请参阅[文档](https://docs.microsoft.com/azure/best-practices-availability-paired-regions)。
 
 使用 GZRS 存储帐户，可以在可用性区域变得不可用或无法恢复时继续读取和写入数据。 此外，在发生整个区域中断或发生主要区域无法恢复的灾难时，数据也是持久的。 GZRS 设计为在给定的一年内提供至少99.99999999999999% （16个9）的对象持久性。 GZRS 还提供与 LRS、ZRS、GRS 或 RA-GRS 相同的[可伸缩性目标](storage-scalability-targets.md)。 如果你的应用程序需要能够在主要区域发生灾难时读取数据，则可以选择启用对辅助区域中的数据的读取访问（使用读取访问权限异地冗余存储（GZRS））。
 
